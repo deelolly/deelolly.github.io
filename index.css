@@ -12,12 +12,13 @@ html, body {
       background-size: cover;
 }
 .ab {
-      background-color:rgb(7, 81, 124);
+      background-color:black;
       background-image: url(image/abt.jpg);
       height: 100%;
       background-position: left;
       background-repeat: no-repeat;
       background-size: cover;
+      
 }
 .pt {
 background-color: black;
@@ -45,7 +46,7 @@ Body {
       padding-top:2px;
 }
 p {
-      font-size: 12px;
+      font-size: 10.5px;
           
 }
 .begin {
@@ -56,10 +57,15 @@ div#header {
       border-bottom-style: solid;
       border-bottom-color: #3E2723;
       border-top-color:#3E2723;
-      border-width: 5px;
-      background-color: #0091EA;
-      opacity: 0.6;
+      border-width: 7px;
+      box-sizing: border-box;
+      background-color: #0091ea99;
       position: relative;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: 20px;
+      margin-left: 150px;
+      margin-right: 150px;
 }
 div#header ul {
             list-style-type: none;
@@ -73,28 +79,29 @@ div#header ul {
 }
 div#header ul li {
       display: inline-block;
-      padding-right: 150px;
+      padding-right: 100px;
       padding-left: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       color: white;
 }
       
 
 div.describe {
-      width: 50%;
-      float: right;
+      width: 30%;
+      float: left;
       text-align: justify;
       padding: ;
-      padding-left: ;
+      padding-left:450px ;
       padding-right: ;
       
       
 }
 div.abtvid {
-      position: relative;
-      top: 430px;
-      left: 450px;
+      float: left;
+      width: 30%;
+      padding-left: 50px;
+      
 }
 p.one {
       border-width: 38px;
@@ -113,7 +120,7 @@ ol#list li{
       padding-right: 30px;
       text-align: justify;
       color: white;
-      font-size: 12px;
+      font-size: 10.5px;
 }
 ol#list a {
       color: #0091EA;
@@ -131,13 +138,16 @@ ol#list a {
      
 
 }
-#best {
+p#best {
       font-style: italic;
       font-weight: bold;
+      font-size: 12px;
+      padding-right: 70px;
+      margin-top: 0px;
 }
 #me, #welcome {
       text-transform: uppercase;
-      padding-right: 150px;
+      padding-right: 70px;
 }
 p {
       line-height: 1.6em;
@@ -161,6 +171,7 @@ a:focus {
 legend {
       color: #0091EA;
       font-weight: bold;
+      
 }
 textarea {
       font-family: 'Kurale', serif;
@@ -170,8 +181,8 @@ textarea {
       border-radius: 4px;
 }
 iframe {
-      height: 300px;
-      width: 400px;
+      height: 250px;
+      width: 350px;
       border: 3px solid #0091EA;
       border-radius: 4px;
       align-self: center;
@@ -185,7 +196,7 @@ footer {
 div.form {
       color: white;
       padding: 450px;
-      padding-top: 100px;
+      padding-top: 10px;
       padding-bottom: 10px;
       border-style: thick;
       border-bottom-color: #0091EA;
@@ -226,3 +237,23 @@ div.icons ul li {
       padding-left: 10px;
       font-size: 12px;
 }
+  .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #0091ea66;
+      margin: 10px;
+      padding-left: 150px;
+     
+    }
+    .flex-container img{
+      width: 300px;
+      height: 300px;
+      padding: 20px;
+    }
+    img {
+          max-width: 100%;
+          max-height: auto;
+    }
+    #contact {
+          font-size: 12px;
+    }
