@@ -279,7 +279,7 @@ div.icons ul li {
             background-image: url(image/pix11.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
-            background-size: 130%;
+            background-size: 110%;
             height: 500%;
             width: 100%;
             background-color: black;
@@ -288,13 +288,19 @@ div.icons ul li {
             #0091EA;
             font-family: 'Marko One', serif;
             word-spacing: 4px;
-            font-size: 18px;
+            font-size: 15px;
             text-align: centre;
       }
       div.begin {
             padding-right: 0px;
+            padding-left: 80px;
+            border: 0px;
       }
       #welcome {
+            text-align: center;
+      }
+      p#best {
+            font-size: 8px;
             text-align: center;
       }
       div#header {
