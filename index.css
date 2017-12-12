@@ -2,18 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Kurale|Lily+Script+One|Sacramento|Sail');
 @import url('https://fonts.googleapis.com/css?family=Galada|Marko+One');
 html, body {
-      height: 100%;
-}
+            max-height: 100%;
+            max-width: 100% ;
+      }
 .bg {
       background-image: url( image/pix2.jpg);
-      height: 100%;
-      background-position: left;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center center;
+      background-size: 100%;
+      height: 100%;
 }
 .ab {
-      background-color:black;
-      background-image: url(image/abt.jpg);
+      background-color: rgb(7, 54, 160);
+      background-image: url(image/blue2.jpg);
       height: 100%;
       background-position: left;
       background-repeat: no-repeat;
@@ -46,7 +48,7 @@ Body {
       padding-top:2px;
 }
 p {
-      font-size: 10.5px;
+      font-size: 12px;
           
 }
 .begin {
@@ -90,38 +92,41 @@ div#header ul li {
 
 div.describe {
       width: 30%;
-      float: left;
-      text-align: justify;
-      padding: ;
-      padding-left:450px ;
-      padding-right: ;
+      text-align: ;
+      padding-left:100px ;
+}
+ div.abtpix {
+padding-left: 50px;
+ }     
       
-      
+div.abt {
+      display: flex;
+      flex-direction: row;
 }
 div.abtvid {
-      float: left;
       width: 30%;
       padding-left: 50px;
+      padding-right: 50px;
       
 }
 p.one {
       border-width: 38px;
-      border-width: thick;
       padding-right: 30px;
       color: white;
+      text-align: justify;
 
 }
 p.two {
       border-width: 38px;
-      border-width: thick;
       color: white;
       padding-right: 30px;
+      text-align: justify;
 }
 ol#list li{
       padding-right: 30px;
       text-align: justify;
       color: white;
-      font-size: 10.5px;
+      font-size: 12px;
 }
 ol#list a {
       color: #0091EA;
@@ -135,9 +140,7 @@ ol#list a {
       font-weight: bold;
 }
 #list {
-      font-size: 16px;
-     
-
+      font-size: 16px; 
 }
 p#best {
       font-style: italic;
@@ -150,8 +153,12 @@ p#best {
       text-transform: uppercase;
       padding-right: 70px;
 }
+#me2 {
+      text-transform: uppercase;
+      padding-right: 150px;
+}
 p {
-      line-height: 1.6em;
+      
       text-align: justify;
 }
 #xxx::first-letter {
@@ -168,10 +175,14 @@ a {
 a:focus {
       color: white;
 }
+div.legend {
+      padding: 100px;
+}
 
 legend {
       color: #0091EA;
       font-weight: bold;
+      font-size: 24px;
       
 }
 textarea {
@@ -196,14 +207,19 @@ footer {
 }
 div.form {
       color: white;
-      padding: 450px;
+      padding: 20px;
       padding-top: 10px;
       padding-bottom: 10px;
       border-style: thick;
       border-bottom-color: #0091EA;
+      display: flex;
+      flex-direction: row;
+}
+div.form2 {
+      padding-left: 150px;
 }
 input {
-      width: 100%;
+      width: 435px;
       padding: 12px 20px;
       margin: 8px 0;
       box-sizing: border-box;
@@ -256,5 +272,106 @@ div.icons ul li {
           max-height: auto;
     }
     #contact {
-          font-size: 12px;
+          font-size: 14px;
     }
+    @media screen and (max-width: 1000px) {
+      .bg {
+            background-image: url(image/pix1.jpg);
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-size: 130%;
+            height: 500%;
+            width: 100%;
+            background-color: black;
+      }
+      h1 {color:
+            #0091EA;
+            font-family: 'Marko One', serif;
+            word-spacing: 4px;
+            font-size: 18px;
+            text-align: centre;
+      }
+      div.begin {
+            padding-right: 0px;
+      }
+      #welcome {
+            text-align: center;
+      }
+      div#header {
+            border-top-style: solid;
+            border-bottom-style: solid;
+            border-bottom-color: rgb(255, 255, 255);
+            border-top-color:rgb(253, 251, 251);
+            border-width: 3px;
+            box-sizing: border-box;
+            background-color: rgb(0, 109, 172);
+            margin-left: 20px;
+            margin-right: 20px;
+            
+      }
+      div#header ul {
+                  padding: 2px;
+                  list-style-type: none;
+                  font-size: 10px;
+                  color: white;
+                  font-weight: bold;
+                  text-align: center;
+                  
+                 
+      }
+      div#header ul li {
+            padding: 1px;
+            color: white;
+            display: inline;
+      }
+      .ab {
+            background-color: black;
+            background-image: url(image/blue2.jpg); 
+      }
+            div.abt {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+      }
+      div.describe {
+            padding-left: 10px;
+            border: 0px;
+            width: 100%;
+      }
+      div.abtvid {
+            position: relative;
+            right:30px;
+      }
+      .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: rgb(0, 109, 172);
+            margin: 10px;
+            padding:20px;
+           
+          }
+          .flex-container img{
+            width: 150px;
+            height: 150px;
+            padding: 5px;
+          } 
+      div.form {
+            display: flex;
+            flex-direction:column;
+      } 
+      div.form2 {
+            padding-left: 20px;
+            padding-top: 5px;
+      }  
+      div.legend {
+           padding:  20px;
+           padding-top: 0px;
+      }
+      input {
+            width: 250px;
+      }
+      textarea {
+            width: 250px;
+      }
+      }
