@@ -276,7 +276,7 @@ div.icons ul li {
     }
     @media screen and (max-width: 1000px) {
       .bg {
-            background-image: url(image/pix1.jpg);
+            background-image: url(image/pix11.jpg);
             background-repeat: no-repeat;
             background-position: center bottom;
             background-size: 130%;
@@ -342,6 +342,13 @@ div.icons ul li {
             position: relative;
             right:30px;
       }
+      iframe {
+            height: 200px;
+            width: 300px;
+            border: 3px solid #0091EA;
+            border-radius: 4px;
+            align-self: center;
+      }
       .flex-container {
             display: flex;
             flex-wrap: wrap;
@@ -352,8 +359,8 @@ div.icons ul li {
            
           }
           .flex-container img{
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             padding: 5px;
           } 
       div.form {
