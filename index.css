@@ -14,7 +14,7 @@ html, body {
       height: 100%;
 }
 .ab {
-      background-color: rgb(7, 54, 160);
+      background-color: rgb(0, 7, 17);
       background-image: url(image/blue2.jpg);
       height: 100%;
       background-position: left;
@@ -94,6 +94,7 @@ div.describe {
       width: 30%;
       text-align: ;
       padding-left:100px ;
+      padding-top: 0px;
 }
  div.abtpix {
 padding-left: 50px;
@@ -116,10 +117,16 @@ p.one {
       text-align: justify;
 
 }
+
 p.two {
       border-width: 38px;
       color: white;
       padding-right: 30px;
+      text-align: justify;
+}
+p.three {
+      color: white;
+      padding-right: 25px;
       text-align: justify;
 }
 ol#list li{
